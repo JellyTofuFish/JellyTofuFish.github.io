@@ -94,22 +94,143 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+* {
+    /*border: 1px solid black;*/
+    box-sizing: border-box;
+}
 
+.jumbotron {
+    border-radius: 0 ;
+    margin-bottom: 0 ;
+    margin-top: 0 ;
+}
 
+header {
+    min-width: 700px;
+    overflow: hidden;
+}
 
+header .row {
+    height: auto;
+    width: 83.6%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 5px;
+    z-index: 999;
+}
 
+.brand {
+    height: auto;
+    margin: auto 0 ;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+}
 
+.nav-item {
+    padding: 0 4rem 0 4rem;
+    font-size: 1.3rem;
+}
 
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
 
+.icon {
+    display: block;
+    margin: .5rem auto;
+    min-width: 1rem;
+    max-width: 4rem;
+    height: auto;
+    border-radius: 50%;
+}
 
+.title {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -5rem;
+    margin-bottom: -5rem;
+}
 
+.title .row {
+    min-width: 700px;
+    max-width: 50rem;
+    text-align: center;
+    justify-content: center;
+}
+.title h1,
+.title p {
+    color: #fff;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    font-family: 'Muli', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+}
+.title h1 {
+    font-size: 5rem;
+}
+.title p {
+    font-size: 2rem;
+}
 
+.homeTitle {
+    height: 500px;
+    background: url(../img/img.jpg) no-repeat bottom center;
+    background-size: cover;
+}
 
+.contactTitle {
+    height: 450px;
+    background: url(../img/speedpaint_101_the_great_sky_river_by_rhads-d9n2318.jpg) repeat top center;
+    background-size: cover;
+}
+.projectsTitle {
+    height: 450px;
+    background: url(../img/skyline_by_platinumnova-d36zk7c.png) no-repeat bottom center;
+    background-size: cover;
+}
 
+.mainMenu {
+    background: linear-gradient(45deg, white 0%, white 100%);
+    background: -webkit-linear-gradient(45deg, white 0%, white 100%);
+}
 
+.mainMenu .col-sm-12 {
+    padding: 1.5rem;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0.15rem 0.15rem 0.4rem black;
+}
 
+.mainMenu h2,
+.mainMenu h3,
+.mainMenu .p {
+    color: black;
+    text-decoration: none;
+}
 
+.mainMenu h2 {
+    font-size: 2.2rem;
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
 
+.mainMenu h3 {
+    font-size: 1.4rem;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+}
+
+.mainMenu p {
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.4rem;
+}
 
 /* ==========================================================================
    Helper classes

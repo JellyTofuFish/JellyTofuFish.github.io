@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Portfolio</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,8 +11,11 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -20,7 +23,75 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+
+        <header class="container">
+            <div class="row">
+                <div class=" col-sm-1">
+                    <img class="icon" src="img/youtube_profile.jpg">
+                </div>
+                <div class="col-sm-3">
+                    <p class="brand">JellyTofuFish</p>
+                </div>
+
+                <nav class="col-sm-8 navbar navbar-toggleable-md navbar-inverse">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="projects.html">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacts.html">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="jumbotron title homeTitle ">
+            <div class="row">
+                <h1>E. Aksamitauskas </h1>
+                <p>A starting web developer</p>
+            </div>
+        </section>
+
+        <section class="mainMenu jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>ABOUT</h2>
+                        <h3>Full name: </h3>
+                        <p>Edvinas Aksamitauskas</p>
+                        <h3>Interests:</h3>
+                        <p>Interesting, new or simply still unexplored web intricacies have always made me want
+                            to search or learn more about those various features. I am mostly interested in learning more about web development and graphics design.</p>
+                        <h3>Education: </h3>
+                        <p><a class="link" href="https://admissions.ktu.edu/">Kaunas University of Technology</a>.
+                            Finished second year of study. Third year is mostly dedicated to the data system specialization,
+                            plus extra classes in graphics design. I will be learning to work with and implament various frameworks,
+                            relative, up-to-date details on how to make a responsive user interface, real time widgets,
+                            expanding the knowledge of how to work in a team by creating projects and more! </p>
+                        <h3>Have worked with:</h3>
+                        <p>PHP, MySQL, CSS, HTML5, JS, Git, Symfony 3</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mainMenu jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>PROJECTS</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
