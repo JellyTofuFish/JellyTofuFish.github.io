@@ -1,0 +1,184 @@
+
+html, body {
+    margin:0;
+    padding: 0;
+}
+
+* {
+    /*border: 1px solid black;*/
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.jumbotron {
+    background: url(http://s3.amazonaws.com/codecademy-content/projects/broadway/bg.png) no-repeat center center;
+    background-size: cover;
+    height: 800px;
+}
+
+.header {
+    background-color: #333;
+}
+
+.navigation {
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 20px 0;
+    margin: 0;
+}
+
+li {
+    color: #fff;
+    display: inline;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 10px;
+    text-transform: uppercase;
+    padding: 22px 10px 21px 10px;
+}
+
+li:hover {
+    color: #333333;
+    background-color: white;
+    animation: ease;
+    animation-duration: 5s;
+}
+
+.main {
+    position: relative;
+    top: 180px;
+    text-align: center;
+}
+
+.main h1 {
+    color: #333;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 70px;
+    margin: 0 40px 80px 40px ;
+    text-transform: uppercase;
+}
+
+.btn-main {
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    padding: 16px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-default {
+    border: 1px solid #333;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 1.3px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.supporting {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.supporting .col {
+    float: left;
+    width: 33%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.supporting img {
+    height: 32px;
+}
+
+.supporting h2 {
+    font-weight: 600;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+.supporting p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 50px;
+    margin-bottom: 40px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.table {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #333;
+}
+
+table {
+    height: 40%;
+    left: 10%;
+    margin: 20px auto;
+    overflow-y: scroll;
+    position: static;
+}
+
+thead th {
+    background: #333;
+    color: #fff;
+    font-family: 'Loto', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+tr {
+    background: #f4f7f8;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+}
+
+th, td{
+    font-family: 'Lato', sans-serif;
+    font-weight:400;
+    padding: 20px;
+    font-size: 18px;
+    text-align: left;
+    width: 33.3333%;
+}
+
+.search {
+    background-color: #fff;
+    border: 1px solid #888;
+    border-radius: 3px;
+    color: #aaa;
+    padding: 20px;
+    margin: 50px auto 0px auto;
+    width: 77%;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer p {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+}
