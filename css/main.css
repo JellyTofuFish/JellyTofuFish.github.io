@@ -107,63 +107,88 @@ textarea {
 
 header .row {
     margin: auto;
-    padding: auto;
+    padding: 0;
     position: fixed;
-    width: 85%;
+    width: 80%;
     left: 50%;
     transform: translateX( -50%);
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.6);
-    float: left;
-    /*max-width: 700px;*/
 }
 
-.col-sm-3 {
-    height: auto;
-    margin: auto;
+header .col-sm-8,
+header .col-sm-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 .brand {
+    margin: 0 auto;
     color: white;
     font-size: 1.5rem;
 }
 
+.navbar-nav {
+    width: 100%;
+    display: table;
+}
+
+.navbar-nav li {
+    display: table-cell;
+}
+
 .nav-link {
-    margin: 0 3rem;
+    display: block;
+    text-align: center;
     font-size: 1.3rem;
 }
 
-.nav-item:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .icon {
     display: block;
     margin: .5rem auto;
-    min-width: 1rem;
-    max-width: 4rem;
+    width: 4rem;
     height: auto;
     border-radius: 50%;
 }
 
-.title {
-    width: 100%;
+/* Title screen */
+
+.titleImage {
+    height: 650px;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: -5rem;
-    margin-bottom: -5rem;
-    min-width: 320px;
+    top: -10px;
+    width: 100%;
+}
+
+.homeImage {
+    background: url(../img/Italy.jpg) fixed no-repeat center;
+    background-size: cover;
+}
+
+.contactImage {
+    background: url(../img/speedpaint_101_the_great_sky_river_by_rhads-d9n2318.jpg) fixed repeat top center;
+    background-size: cover;
+}
+
+.projectsImage {
+    background: url(../img/skyline_by_platinumnova-d36zk7c.png) fixed no-repeat top center;
+    background-size: cover;
+}
+
+.title {
+    position: relative;
+    margin: 0 auto;
+    max-width: 60rem;
+    text-align: center;
+    top: 10rem;
     overflow: hidden;
 }
 
-.title .row {
-    max-width: 50rem;
-    text-align: center;
-    justify-content: center;
-    min-width: 320px;
-    overflow: hidden;
-}
 .title h1,
 .title p {
     color: #fff;
@@ -173,40 +198,26 @@ header .row {
     font-weight: 700;
 }
 .title h1 {
-    font-size: 4.8rem;
+    font-size: 5.2rem;
+    line-height: 5rem;
+    padding:  2rem 0;
 }
 .title p {
     font-size: 2rem;
+    line-height: 3rem;
 }
 
-.homeTitle {
-    height: 500px;
-    background: url(../img/img.jpg) no-repeat bottom center;
-    background-size: cover;
-}
-
-.contactTitle {
-    height: 450px;
-    background: url(../img/speedpaint_101_the_great_sky_river_by_rhads-d9n2318.jpg) repeat top center;
-    background-size: cover;
-}
-.projectsTitle {
-    height: 450px;
-    background: url(../img/skyline_by_platinumnova-d36zk7c.png) no-repeat bottom center;
-    background-size: cover;
-}
+/* Main content */
 
 .mainMenu {
-    background: linear-gradient(45deg, white 0%, white 100%);
-    background: -webkit-linear-gradient(45deg, white 0%, white 100%);
-    min-width: 320px;
+    background: linear-gradient(330deg, white 60%, lightgray 99%);
+    background: -webkit-linear-gradient(330deg, white 60%, lightgray 99%);
     overflow: hidden;
 }
 
 .mainMenu .col-sm-12 {
     padding: 1.5rem;
     background-color: white;
-    width: 100%;
     box-shadow: 0.15rem 0.15rem 0.4rem black;
 }
 
@@ -221,13 +232,15 @@ header .row {
     font-size: 2.2rem;
     font-family: 'Muli', sans-serif;
     font-weight: 700;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
 }
 
 .mainMenu h3 {
     font-size: 1.4rem;
     font-family: 'Josefin Slab', serif;
     font-weight: 700;
+    line-height: 2.5rem;
 }
 
 .mainMenu p {
@@ -235,43 +248,71 @@ header .row {
     font-size: 1.4rem;
 }
 
+/*Projects window */
+
 .projectsPosition {
-    box-sizing: border-box;
-    width: 95%;
-    margin: 20px auto;
+    width: 100%;
+    margin: 0 auto;
     padding: 20px 0;
     text-align: center;
 }
 
 .project {
     display: inline-block;
-    margin: 0 2% 80px 2%;
+    margin: 0 0 6rem 0;
     text-align: center;
-    width: 45%;
-    border: 2px solid black;
+    width: 85%;
 }
 .project img {
-    width: 100%;
+    width: 90%;
+    border: 2px solid darkgray;
+    border-radius: 0.5rem;
+
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px){
     .nav-link {
-        margin: 0;
-        padding: 0;
+        /*margin: 0;*/
+        /*padding: 0;*/
     }
+
     .nav-item {
         font-size: 1rem;
 
     }
+
     .title h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
     }
-    .icon {
-        display: none;
+
+    .title p {
+        font-size: 1.2rem;
     }
-    .brand {
-        display: none;
+
+    header .row {
+        width: 100%;
     }
+
+    .project,
+    .project img {
+        width: 100%;
+    }
+
+    .project {
+        margin: 0 0 2rem 0;
+    }
+    .mainMenu p {
+        font-family: 'Josefin Slab', serif;
+        font-size: 1.1rem;
+    }
+
+}
+@media only screen and (max-width: 1024px) and (min-width: 480px) {
+    .title h1 {
+        font-size: 3.5rem;
+    }
+
 }
 
 /* ==========================================================================
